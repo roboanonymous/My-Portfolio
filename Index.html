@@ -9,9 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title> Samyak Jain</title>
     <style>
+
+        #navbar
+        {
+            display: flex;
+            alignment: center;
+            position: sticky;
+            border: 2px solid green;
+            top: 0px;
+        }
+        
         .container
         {
-            background-image: url("plant.jpg");
+            /* background-image: url("plant.jpg"); */
            position:absolute;
            right:0px;
            top:0px;
@@ -68,11 +78,122 @@
         
         }
 
+
+        
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('tyler-franta-iusJ25iYu1c-unsplash.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
         }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">My Projects</a></li>
+            <li class="item"><a href="#client-section">Work Experience</a></li>
+            <li class="item"><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!-- <section class="container">
         <div class="home">
             <p id = "Hello"> Hello, I'm Samyak Jain</p>
             <p id = "Developer"> I am Developer </p>
@@ -80,12 +201,79 @@
                 View My Work
             </button>
         </div>
-    </div>
+    </section> -->
 
-    <div class="nav">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur eos, earum nisi dolore facilis doloremque saepe quo adipisci, recusandae fuga, tempora velit fugiat voluptatibus molestias laboriosam in voluptatem consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed quas temporibus earum porro, explicabo numquam aut optio sapiente maiores alias repudiandae nisi magnam dolores sequi et atque a magni? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aliquid. Nisi delectus, veniam dignissimos nobis assumenda tempore autem necessitatibus asperiores animi, illo vero veritatis cumque incidunt, nam hic modi! Culpa?</p>
+    <section class="about">
 
-    </div>
+        
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="Burger.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="KFC.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="Dog.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FoodHungry.com. All rights reserved!
+        </div>
+    </footer>
+
+
     
 </body>
 </html>
